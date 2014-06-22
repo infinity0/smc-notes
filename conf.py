@@ -171,13 +171,34 @@ htmlhelp_basename = 'msg-notes'
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
+'preamble': """
+\\usepackage{amssymb}
+\\DeclareUnicodeCharacter{21A6}{$\\mapsto$}
+\\DeclareUnicodeCharacter{2190}{$\\leftarrow$}
+\\DeclareUnicodeCharacter{21D2}{$\\Rightarrow$}
+\\DeclareUnicodeCharacter{21D4}{$\\Leftrightarrow$}
+\\DeclareUnicodeCharacter{2200}{$\\forall$}
+\\DeclareUnicodeCharacter{2203}{$\\exists$}
+\\DeclareUnicodeCharacter{2204}{$\\nexists$}
+\\DeclareUnicodeCharacter{2208}{$\\in$}
+\\DeclareUnicodeCharacter{2209}{$\\notin$}
+\\DeclareUnicodeCharacter{2227}{$\\wedge$}
+\\DeclareUnicodeCharacter{2228}{$\\vee$}
+\\DeclareUnicodeCharacter{2229}{$\\cap$}
+\\DeclareUnicodeCharacter{2260}{$\\neq$}
+\\DeclareUnicodeCharacter{2261}{$\\equiv$}
+\\DeclareUnicodeCharacter{2264}{$\\leq$}
+\\DeclareUnicodeCharacter{2265}{$\\geq$}
+\\DeclareUnicodeCharacter{2282}{$\\subset$}
+\\DeclareUnicodeCharacter{228F}{$\\sqsubset$}
+\\DeclareUnicodeCharacter{22A5}{$\\perp$}
+""",
 }
 
 # Grouping the document tree into LaTeX files. List of tuples

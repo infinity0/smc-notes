@@ -6,8 +6,6 @@
 Topics in secure messaging systems
 ==================================
 
-Contents:
-
 .. toctree::
    :glob:
    :maxdepth: 2
